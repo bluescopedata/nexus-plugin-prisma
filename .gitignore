@@ -1,4 +1,4 @@
-dist
+
 node_modules
 example/db
 example/migrations
@@ -20,3 +20,5 @@ tests/tmp
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+!dist

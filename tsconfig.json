@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "composite": true,
+    // "composite": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "target": "es2016",
+    "target": "ES6",
     "module": "commonjs",
     "lib": ["esnext"],
     "strict": true,
@@ -11,8 +11,8 @@
     "rootDir": "src",
     "outDir": "dist",
     "declaration": true,
-    "sourceMap": true,
-    "declarationMap": true,
+    // "sourceMap": true,
+    // "declarationMap": true,
     "noErrorTruncation": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -21,5 +21,5 @@
     "noImplicitAny": false
   },
   "include": ["src"],
-  "exclude": ["./**/*.spec.ts", "tests", ".yarn", "examples", ".vscode", ".github", "dist", "scripts"]
+  "exclude": ["./**/*.spec.ts", "tests", ".yarn", "examples", ".vscode", ".github"]
 }
