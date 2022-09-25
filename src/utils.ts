@@ -46,7 +46,7 @@ export const hardWriteFile = (filePath: string, data: string): Promise<void> =>
 export const hardWriteFileSync = (filePath: string, data: string): void => {
   try {
     fs.remove(filePath)
-  } catch (error) {
+  } catch (error: any) {
     if (error.code !== 'ENOENT') throw error
   }
   fs.write(filePath, data)

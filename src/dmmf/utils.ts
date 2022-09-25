@@ -5,7 +5,7 @@ export const getPrismaClientDmmf = (packagePath: string): DMMF.Document => {
 
   try {
     dmmf = require(packagePath).dmmf
-  } catch (error) {
+  } catch (error: any) {
     throw new Error(
       `Failed to import prisma client package at ${packagePath}. The following error occured while trying:
         ${error.stack}`
