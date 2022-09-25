@@ -24,7 +24,7 @@
     "dev": "yarn -s build:module-facades && tsc --watch",
     "prepublishOnly": "yarn -s build",
     "format": "prettier --write 'src/**/*.ts' 'tests/**/*.ts' 'examples/**/*.ts'",
-    "postinstall": "yarn build && ts-node ./scripts/postinstall.js",
+    "postinstall": "yarn install && yarn build && ts-node ./scripts/postinstall.js",
     "test": "jest --testTimeout=10000 --forceExit",
     "test:dev": "jest src tests/ --watch",
     "upgrade-prisma-dev": "yarn add prisma @prisma/client@dev @prisma/generator-helper@dev @prisma/migrate@dev @prisma/sdk@dev"
