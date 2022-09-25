@@ -1,5 +1,5 @@
-import { nexusPrisma } from '@kenchi/nexus-plugin-prisma'
-import { PrismaClient, User } from '@prisma/client'
+import { nexusPrisma } from '@bluescopedata/nexus-plugin-prisma'
+import { PrismaClient, User } from '@~internal/prisma-myschema/client'
 import { ApolloServer, PubSub } from 'apollo-server-express'
 import express from 'express'
 import { DateTimeResolver, JSONObjectResolver } from 'graphql-scalars'

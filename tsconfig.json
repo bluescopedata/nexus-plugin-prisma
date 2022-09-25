@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "composite": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "target": "es2016",
@@ -19,5 +20,5 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
-  "exclude": ["./**/*.spec.ts", "tests"]
+  "exclude": ["./**/*.spec.ts", "tests", ".yarn"]
 }

@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@~internal/prisma-myschema/client'
 
 async function seed() {
   const prisma = new PrismaClient()

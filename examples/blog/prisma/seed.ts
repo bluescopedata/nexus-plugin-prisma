@@ -1,4 +1,4 @@
-import { PrismaClient, PostStatus } from '@prisma/client'
+import { PrismaClient, PostStatus } from '@~internal/prisma-myschema/client'
 import { name } from 'faker'
 
 main()

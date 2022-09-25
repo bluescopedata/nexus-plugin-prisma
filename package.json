@@ -1,5 +1,5 @@
 {
-  "name": "@kenchi/nexus-plugin-prisma",
+  "name": "@bluescopedata/nexus-plugin-prisma",
   "version": "0.39.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,7 +15,7 @@
     "typegen.d.ts"
   ],
   "scripts": {
-    "release": "npm config -L project set @kenchi:registry=https://npm.pkg.github.com/ && yarn publish && npm config -L project delete @kenchi:registry && yarn publish",
+    "release": "npm config -L project set @bluescopedata:registry=https://npm.pkg.github.com/ && yarn publish && npm config -L project delete @bluescopedata:registry && yarn publish",
     "clean": "rm -rf dist",
     "build": "yarn clean && yarn build:deps-sync && yarn build:module-facades && tsc",
     "build:deps-sync": "node scripts/ensure-deps-sync",
@@ -37,8 +37,10 @@
   "dependencies": {
     "camelcase": "^6.2.0",
     "endent": "^2.1.0",
+    "find-up": "^6.3.0",
     "fs-jetpack": "^4.1.0",
     "lodash": "^4.17.20",
+    "pkg-up": "^4.0.0",
     "pluralize": "^8.0.0",
     "semver": "^7.3.4"
   },
