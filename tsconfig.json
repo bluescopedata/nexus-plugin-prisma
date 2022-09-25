@@ -20,5 +20,5 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
-  "exclude": ["./**/*.spec.ts", "tests", ".yarn"]
+  "exclude": ["./**/*.spec.ts", "tests", ".yarn", "examples", ".vscode", ".github", "dist", "scripts"]
 }
