@@ -21,5 +21,5 @@
     "noImplicitAny": false
   },
   "include": ["src"],
-  "exclude": ["./**/*.spec.ts", "tests", ".yarn", "examples", ".vscode", ".github"]
+  "exclude": ["node_modules", "./**/*.spec.ts", "tests", ".yarn", "examples", ".vscode", ".github"]
 }
